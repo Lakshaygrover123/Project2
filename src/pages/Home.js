@@ -9,7 +9,8 @@ function Home() {
     const [news, setNews] = useState()
     async function FetchNews() {
         try {
-            const { data } = await axios.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=7d045196fee24b95a22a28090faaab39');
+            const API="7d045196fee24b95a22a28090faaab39"
+            const { data } = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API}`);
             if (data) {
                 setNews(data.articles)
             }
