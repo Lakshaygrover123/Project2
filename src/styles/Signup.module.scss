@@ -1,0 +1,178 @@
+@import "./global.scss";
+
+.Container {
+    background: $PrimaryBg;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include phone {
+        margin: 0px !important;
+    }
+
+    section {
+        background: white;
+        margin: auto;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 20px;
+
+        @include phone {
+            width: 100%;
+            height: 100%;
+            justify-content: flex-start;
+            border-radius: 0px;
+        }
+
+        @include tablet{
+            width: 45%;
+        }
+
+        .Pointers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0px auto;
+            height: 3rem;
+
+            h5 {
+                color: $PrimaryBg;
+                font-weight: 600;
+                font-size: 16px;
+
+                @include phone{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .InputDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+
+
+            input {
+                width: 350px;
+                height: 2.7rem;
+                margin: 7px auto;
+                border: 1px solid rgba(0, 0, 0, 0.347);
+                padding: 5px 10px;
+                font-size: 14px;
+                // font-weight: 600;
+                border-radius: 7px;
+                box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.274);
+
+                @include phone {
+                    width: 270px;
+                }
+
+                @include tablet{
+                    width: 300px;
+                }
+            }
+        }
+
+        .HeadingDiv {
+
+            h2 {
+                color: $PrimaryBg;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 0px;
+                text-align: center;
+
+                @include phone {
+                    font-size: 22px;
+                }
+            }
+
+            p {
+                font-size: 19px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.605);
+
+                @include phone {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .SignupBtn {
+        width: 80%;
+        background: $PrimaryBg;
+        color: white;
+        padding: 10px;
+        border: 0px;
+        height: 3rem;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 600;
+
+        @include phone{
+            width: 75%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .SocialLinks {
+        // width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+
+        button {
+            width: 355px;
+            padding: .8rem;
+            box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.541);
+            border-radius: 7px;
+            border: 0px;
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.347);
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include phone{
+                width: 290px;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .Rocket {
+        width: 52%;
+        height: 160px;
+    }
+}

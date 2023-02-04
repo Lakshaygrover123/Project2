@@ -1,0 +1,13 @@
+$PrimaryBg:#654CAA;
+
+// Mixins for Media Queries+++++++++++++++
+@mixin phone {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: 1150px) {
+        @content;
+    }
+}

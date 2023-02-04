@@ -1,0 +1,51 @@
+@import "./global.scss";
+
+.Conatiner {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+
+    .Main {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        img {
+            width: 120px;
+            height: 60px;
+        }
+
+        ul {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+
+            @include phone {
+                display: none;
+            }
+
+            li {
+                margin: 0px 20px;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .SocialDiv {
+        margin-left: auto;
+
+        @include phone {
+            display: none;
+        }
+
+        .Socio {
+            width: 35px;
+            height: 35px;
+            margin: 0px 15px;
+        }
+    }
+}
